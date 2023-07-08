@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+.background {
+    background-image: url(images/mountain.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container h1 {
+    font-size: 4rem;
+}
+
+.settings {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.settings .fa-gear {
+    font-size: 3rem;
+    color: white;
+}
+
+.settings-content {
+    display: flex;
+    gap: 1rem;
+}
+
+.settings-content input {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.settings-content button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+.time-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.time-container h2 {
+    line-height: 70px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.time-container div {
+    font-size: 5rem;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .container h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .settings {
+        bottom: 10px;
+        right: 10px;
+        gap: 0.3rem;
+    }
+
+    .settings .fa-gear {
+        font-size: 1.5rem;
+    }
+
+    .time-container h2 {
+        line-height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .time-container div {
+        font-size: 3rem;
+    }
+
+    .settings-content input,
+    .settings-content button {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.8rem;
+    }
+}
